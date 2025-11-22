@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+</head>
+
+<body class="roboto">
+
+    <header>
+        <h1>🛒 Finalizar Compra</h1>
+    </header>
+
+    <main class="container">
+
+        <h2 class="mb-3">Resumo do Pedido</h2>
+
+        <div class="checkout_content">
+            
+            <div id="resumo_pedido" class="resumo_container"></div>
+
+            <div class="wrapper">
+                <form id="form_pagamento">
+
+                    <h2>Seus Dados</h2>
+
+                    <input type="text" id="cliente_nome" placeholder="Digite seu nome completo" required>
+                    <input type="email" id="cliente_email" placeholder="Digite seu e-mail" required>
+                    <input type="password" id="cliente_senha" placeholder="Digite sua senha" required>
+
+                    <h5><a href="#">Esqueci minha senha</a></h5>
+
+                    <h2>Forma de Pagamento</h2>
+
+                    <select id="forma_pagamento">
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="pix">PIX</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+
+                    <button type="submit" id="btn_finalizar">💳 Finalizar Pedido</button>
+
+                </form>
+            </div>
+        </div>
+
+        <a href="./Index.html" style="color: white; display: block; margin-top: 30px; text-decoration: none; font-weight: bold;">
+            ⬅️ Voltar à Loja
+        </a>
+
+    </main>
+
+    <footer>
+        <p>© 2025 AirPods Store</p>
+    </footer>
+
+    <script src="scriptsite.js"></script>
+</body>
+
+</html>
